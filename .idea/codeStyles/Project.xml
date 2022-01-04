@@ -1,0 +1,30 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="SOFT_MARGINS" value="80" />
+    <ClojureCodeStyleSettings>{
+  :clj-http.client/post :only-indent
+  :clojure.core/-&gt; 1000
+  :clojure.core/assoc 1000
+  :clojure.core/doall :only-indent
+  :clojure.core/when :only-indent
+  :clojure.core/when-some :only-indent
+  :clojure.test/testing :only-indent
+  :cursive.formatting/align-maps false
+  :cursive.formatting/one-space-lists true
+  :nimbus.value-verification-test.fetch/is_frozen :only-indent
+  :prometheus.aws/plaid-client-id 1000
+  :prometheus.clarity/with-mock-clarity-report 1000
+  :prometheus.leadzeppelin_test/lz-post-lead :only-indent
+  :prometheus.leadzeppelin_test/with-api-key-partner-in-cfg 1000
+  :prometheus.runner/addtest :only-indent
+  :prometheus.runner/is 1000
+  :prometheus.runner/pending :only-indent
+  :prometheus.runner/testing :only-indent
+  :prometheus.sf/with-sf-app 1000
+  :prometheus.util/wait-for 2
+}</ClojureCodeStyleSettings>
+    <codeStyleSettings language="JAVA">
+      <option name="SOFT_MARGINS" value="80" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>
