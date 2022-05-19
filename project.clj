@@ -5,10 +5,18 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[cheshire "5.10.0"]
                  [clj-http "3.12.3"]
+                 [eftest "0.5.9"]
                  [org.clojure/clojure "1.10.3"]
                  [org.clojure/data.json "2.4.0"]]
+  :eftest {:multithread? :namespaces
+           :thread-count 4
+           :report eftest.report.pretty/report
+           ;; :report eftest.report.junit/report
+           ;; You can optionally write the output to a file like so:
+           #_#_:report-to-file "junit.xml"}
   :main api-testing-clojure.core-test
   :repl-options {:init-ns api-testing-clojure.core-test}
-  :profiles {:dev {:aliases
+  :plugins [[lein-eftest "0.5.9"]]
+  #_#_:profiles {:dev {:aliases
                    {"run-tests"
                     ["run" "-m" "api-testing-clojure.core-test"]}}})
