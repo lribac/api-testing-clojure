@@ -8,10 +8,10 @@
                  [eftest "0.5.9"]
                  [org.clojure/clojure "1.10.3"]
                  [org.clojure/data.json "2.4.0"]]
-  :eftest {:multithread? :namespaces
-           :thread-count 4
+  :eftest {:multithread? true
+           :thread-count 10
            :report eftest.report.pretty/report
-           ;; :report eftest.report.junit/report
+           ;:report eftest.report.junit/report
            ;; You can optionally write the output to a file like so:
            #_#_:report-to-file "junit.xml"}
   :main api-testing-clojure.core-test
